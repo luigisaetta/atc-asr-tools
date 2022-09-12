@@ -33,12 +33,6 @@ DEBUG = True
 # the local dir where model files are copied
 MODEL_DIR = "model"
 
-
-# WAV files
-
-# the local dir where all wav files are copied
-
-
 # get the datetime for the name of output
 now = datetime.now().strftime('%Y_%m_%d_%H_%M')
 
@@ -131,6 +125,7 @@ print("OUT_BUCKET:", OUT_BUCKET)
 
 
 # check that GPU is available
+print()
 print("Checking GPU...")
 check_gpu()
 
